@@ -24,6 +24,9 @@ class Calculator:
         self.history.append(f"{a} / {b} = {result}")
         return result
 
+    def get_history(self):
+        return self.history
+
     @staticmethod
     def to_float(value: str) -> float:
         """Convert a string to a float."""
