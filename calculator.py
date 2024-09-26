@@ -1,37 +1,40 @@
+"""Simple calculator that perfoms basic arithmetic"""
+
 class Calculator:
     """A simple calculator class to perform basic arithmetic operations."""
 
     def __init__(self):
-	"""Initialize the calculator with an empty history."""
+        """Initialize the calculator with an empty history."""
         self.history = []
 
     def add(self, a: float, b: float) -> float:
-	"""Return the sum of a and b, and log the operation in history."""
+        """Return the sum of a and b, and log the operation in history."""
         result = a + b
         self.history.append(f"{a} + {b} = {result}")
         return result
 
     def subtract(self, a: float, b: float) -> float:
         """Return the subtraction of a and b, and log the operation in history."""
-	result = a - b
+        result = a - b
         self.history.append(f"{a} - {b} = {result}")
         return result
 
     def multiply(self, a: float, b: float) -> float:
         """Return the multiplication of a and b, and log the operation in history."""
-	result = a * b
+        result = a * b
         self.history.append(f"{a} * {b} = {result}")
         return result
 
     def divide(self, a: float, b: float) -> float:
         """Return the division of a and b, and log the operation in history."""
-	if b == 0:
+        if b == 0:
             raise ValueError("Cannot divide by zero.")
         result = a / b
         self.history.append(f"{a} / {b} = {result}")
         return result
 
     def get_history(self):
+        """Return the history of calculations."""
         return self.history
 
     @staticmethod
