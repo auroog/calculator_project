@@ -2,18 +2,22 @@ import pytest
 from calculator import Calculator 
 
 def test_add():
+	"""Test the add method."""
 	calc = Calculator()
 	assert calc.add(2,3) == 5
 
 def test_subtract():
+	"""Test the subtraction method."""
 	calc = Calculator()
 	assert calc.subtract(10, 5) == 5
 
 def test_multiply():
+	"""Test the multiplication method."""
 	calc = Calculator()
 	assert calc.multiply(4, 5) == 20
 
 def test_divide():
+	"""Test the division method."""
 	calc = Calculator()
 	assert calc.divide(10, 2) == 5
 
