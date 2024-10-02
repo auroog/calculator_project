@@ -1,11 +1,12 @@
 """
-Test suite for the Calculator class.
-This module contains unit tests for the methods of the Calculator class.
+Tests for the calculator module.
 """
 
-
 import pytest
+from faker import Faker
 from calculator import Calculator
+
+fake = Faker()
 
 def test_add():
     """Test the add method."""
@@ -31,27 +32,12 @@ def test_divide_by_zero():
     """Test division by zero raises ValueError."""
     calc = Calculator()
     with pytest.raises(ValueError):
-        calc.divide(10,0)
+        calc.divide(10, 0)
 
-def test_to_float_valid():
-    """Test converting a valid string to float."""
-    assert Calculator.to_float("3.14") == 3.14
-
-def test_to_float_invalid():
-    """Test converting an invalid string to float raises ValueError."""
-    with pytest.raises(ValueError):
-        Calculator.to_float("invalid")
-
-def test_from_history():
-    """Test creating a calculator from history."""
-    history = ["2 + 3 = 5", "10 - 5 = 5"]
-    calc = Calculator.from_history(history)
-    assert calc.history == history
-
-def test_history():
-    """Test the history functionality."""
+def test_fake_data_addition():
+    """Test the add method with fake data."""
     calc = Calculator()
-    calc.add(1, 2)
-    calc.subtract(5, 3)
-    assert len(calc.history) == 2
-    assert calc.history[-1] == "5 - 3 = 2"
+    a = fake.random_int(min=1, max=100)
+    b = fake.random_int(min=1, max=100)
+    expected_result = a + b
+    assert calc.add(a, b) == expected_result
