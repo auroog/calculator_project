@@ -1,5 +1,8 @@
 from calculator import Calculator
 from decimal import Decimal, InvalidOperation
+from faker import Faker 
+
+fake = Faker()
 
 def calculate_and_print(a, b, operation_name):
     operation_mappings = {
@@ -26,3 +29,6 @@ def calculate_and_print(a, b, operation_name):
         print("Error: Division by zero.")
     except Exception as e:
         print(f"An error occurred: {e}")
+
+print(fake.name())
+print(fake.address())
