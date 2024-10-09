@@ -37,7 +37,7 @@ def test_divide_by_zero():
 def test_fake_data_addition():
     """Test the add method with fake data."""
     calc = Calculator()
-    a = fake.random_int(min=1, max=100)
-    b = fake.random_int(min=1, max=100)
-    expected_result = a + b
-    assert calc.add(a, b) == expected_result
+    num1 = fake.random_int(min=1, max=100)
+    num2 = fake.random_int(min=1, max=100)
+    expected_result = num1 + num2
+    assert calc.add(num1, num2) == expected_result

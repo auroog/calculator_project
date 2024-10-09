@@ -5,7 +5,7 @@ Tests for the main module of the calculator application.
 import pytest
 from main import calculate_and_print
 
-@pytest.mark.parametrize("a, b, operation, expected", [
+@pytest.mark.parametrize("num1, num2, operation, expected", [
     ("5", "3", 'add', "The result of 5 add 3 is equal to 8"),
     ("10", "2", 'subtract', "The result of 10 subtract 2 is equal to 8"),
     ("4", "5", 'multiply', "The result of 4 multiply 5 is equal to 20"),
@@ -15,10 +15,10 @@ from main import calculate_and_print
     ("a", "3", 'add', "Invalid number input: a or 3 is not a valid number."),
     ("5", "b", 'subtract', "Invalid number input: 5 or b is not a valid number.")
 ])
-def test_calculate_and_print(a, b, operation, expected, capsys):
+def test_calculate_and_print(num1, num2, operation, expected, capsys):
     """
     Test the calculate_and_print function with various operations.
     """
-    calculate_and_print(a, b, operation)
+    calculate_and_print(num1, num2, operation)
     captured = capsys.readouterr()
     assert captured.out.strip() == expected

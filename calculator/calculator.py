@@ -3,23 +3,23 @@ class Calculator:
     """A class for performing basic arithmetic operations."""
 
     @staticmethod
-    def add(a, b):
+    def add(num1, num2):
         """Return the sum of a and b."""
-        return a + b
+        return num1 + num2
 
     @staticmethod
-    def subtract(a, b):
+    def subtract(num1, num2):
         """Return the difference of a and b."""
-        return a - b
+        return num1 - num2
 
     @staticmethod
-    def multiply(a, b):
+    def multiply(num1, num2):
         """Return the product of a and b."""
-        return a * b
+        return num1 * num2
 
     @staticmethod
-    def divide(a, b):
-        """Return the quotient of a and b. Raises ValueError if b is zero."""
-        if b == 0:
+    def divide(num1, num2):
+        """Return the quotient of num1 and num2. Raises ValueError if num2 is zero."""
+        if num2 == 0:
             raise ValueError("Cannot divide by zero.")
-        return a / b
+        return num1 / num2
