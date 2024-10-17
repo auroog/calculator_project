@@ -1,0 +1,65 @@
+[33mcommit 7badfd52579db8962ea1cb17816396a42c33b763[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;32mfeature/test-data-generation[m[33m)[m
+Author: Aurora <ac2649@njit.edu>
+Date:   Tue Oct 8 21:23:44 2024 -0400
+
+    Initial commit of calculator project
+
+[33mcommit 3a746641c81cf087ca4394d02a3a92f85805150c[m[33m ([m[1;31morigin/feature/test-data-generation[m[33m)[m
+Author: Aurora <ac2649@njit.edu>
+Date:   Wed Oct 2 18:51:22 2024 -0400
+
+    Message here
+
+[33mcommit 7c486c2529bfa138c5814fbd14c4d809c4eee1bb[m[33m ([m[1;31morigin/feature/faker-library[m[33m, [m[1;32mfeature/faker-library[m[33m)[m
+Author: Aurora <ac2649@njit.edu>
+Date:   Wed Oct 2 18:22:20 2024 -0400
+
+    Add Faker library for random data generation
+
+[33mcommit 52243f967885bcd7e4ca7dc9b7d65f15d561b082[m[33m ([m[1;31morigin/faker-feature[m[33m, [m[1;32mfaker-feature[m[33m)[m
+Author: Aurora <ac2649@njit.edu>
+Date:   Wed Oct 2 18:10:46 2024 -0400
+
+    Implemented Faker feature
+
+[33mcommit 0a5f6425fe85b7f236c7ab160c96e3497d9790fa[m[33m ([m[1;32mpart3[m[33m)[m
+Author: Aurora <ac2649@njit.edu>
+Date:   Thu Sep 26 19:23:25 2024 -0400
+
+    Merged main functionality with Part 3 enhancements
+
+[33mcommit 1f2243c653a61fc6dc5519c6ea1c187c8e3dee55[m
+Author: Aurora <ac2649@njit.edu>
+Date:   Wed Sep 25 22:32:35 2024 -0400
+
+    Improve code quality based on Pylint feedback
+
+[33mcommit e1474f25544b4990e7b810088edda53eaacbe986[m
+Author: Aurora <ac2649@njit.edu>
+Date:   Wed Sep 25 22:06:50 2024 -0400
+
+    Cleaned up Calculator class
+
+[33mcommit b97fc1e7fb808b9ee42f616c0a3e8b64b5172659[m
+Author: Aurora <ac2649@njit.edu>
+Date:   Wed Sep 25 21:57:15 2024 -0400
+
+    Add calculator features and tests
+
+[33mcommit dcbc068630e07e1a48f4ef1a7f14bfcd81e2a395[m
+Author: Aurora <ac2649@njit.edu>
+Date:   Wed Sep 25 20:54:24 2024 -0400
+
+    Add Calculator class and tests
+
+[33mcommit eaba41eecb5fdf84bc50d856a89d51fa10d881e6[m
+Author: Aurora <ac2649@njit.edu>
+Date:   Wed Sep 25 19:25:19 2024 -0400
+
+    Update .gitignore to exclude venv
+
+[33mcommit d3c4593021abdf4ed021dd62ffd0a0a43e4916b6[m
+Author: Aurora <ac2649@njit.edu>
+Date:   Wed Sep 25 19:20:21 2024 -0400
+
+    Initial commit with project structure
