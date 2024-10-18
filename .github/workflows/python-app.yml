@@ -1,18 +1,17 @@
-name: Python application
+kname: Python application
 
 on:
-    push:
-       branches: [ "master" ]
-    pull_request:
-       branches: [ "master" ]
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
 
 permissions:
-    contents: read
+  contents: read
 
 jobs:
-    build:
-
-        runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
@@ -28,3 +27,4 @@ jobs:
       - name: Test with pytest
         run: |
           pytest
+
