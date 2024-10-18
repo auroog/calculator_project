@@ -5,6 +5,15 @@ import importlib
 from multiprocessing import Process
 from faker import Faker
 from calculator import Calculator
+from dotenv import load_dotenv
+
+load_dotenv()
+
+environment = os.getenv('ENVIRONMENT')
+api_key = os.getenv('API_KEY')
+
+print(f"Environment: {environment}")
+print(f"API Key: {api_key}")
 
 fake = Faker()
 
